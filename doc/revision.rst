@@ -95,6 +95,8 @@ Document revisions
 +----------+----------------------------------------------------------------------------------+-----------------------------------------------------+-----------------------+
 | 23/01/17 | `9.4 <http://pytango.readthedocs.io/en/v9.2.1>`_                                 | Update to PyTango 9.2.1                             | V\. Michel            |
 +----------+----------------------------------------------------------------------------------+-----------------------------------------------------+-----------------------+
+|   /09/17 | `9.5 <http://pytango.readthedocs.io/en/v9.2.2>`_                                 | Update to PyTango 9.2.2                             |                       |
++----------+----------------------------------------------------------------------------------+-----------------------------------------------------+-----------------------+
 
 .. _pytango-version-history:
 
@@ -104,6 +106,59 @@ Version history
 +----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Version  | Changes                                                                                                                                                               |
 +==========+=======================================================================================================================================================================+
+| 9.2.2    | 9.2.2 release.                                                                                                                                                        |
+|          |                                                                                                                                                                       |
+|          | Features:                                                                                                                                                             |
+|          |     - `Pull Request #104: Issue 13 Pipe Events <https://github.com/tango-controls/pytango/pull/104>`_
+|          |     - `Pull Request #106: Implement pipe write (client and server, issue #9) <https://github.com/tango-controls/pytango/pull/106>`_
+|          |     - `Pull Request #108: Issue-11 Device Interface Change Events <https://github.com/tango-controls/pytango/pull/108>`_
+|          |     - `Pull Request #109: Issue11 Device Interface Change Events <https://github.com/tango-controls/pytango/pull/109>`_
+|          |     - `Pull Request #113: Adding asyncio green mode documentation and a how-to on contributing <https://github.com/tango-controls/pytango/pull/113>`_
+|          |     - `Pull Request #114: Added PEP8-ified files in tango module. <https://github.com/tango-controls/pytango/pull/114>`_
+|          |     - `Pull Request #115: Commands polling tests (client and server) <https://github.com/tango-controls/pytango/pull/115>`_
+|          |     - `Pull Request #116: Attribute polling tests (client and server) <https://github.com/tango-controls/pytango/pull/116>`_
+|          |     - `Pull Request #117: Use official tango-controls conda channel <https://github.com/tango-controls/pytango/pull/117>`_
+|          |     - `Pull Request #121: Issue 12 Dynamic commands <https://github.com/tango-controls/pytango/pull/121>`_
+|          |     - `Pull Request #122: Issue 12 dynamic commands <https://github.com/tango-controls/pytango/pull/122>`_
+|          |     - `Pull Request #124: add forward attribute issue #7 <https://github.com/tango-controls/pytango/pull/124>`_
+|          |     - `Pull Request #125: Forward attribute example <https://github.com/tango-controls/pytango/pull/125>`_
+|          |     - `Pull Request #129: Implement mandatory property (issue #30) <https://github.com/tango-controls/pytango/pull/129>`_
+|          |     - `Pull Request #134: Linting pytango (with pylint + flake8) <https://github.com/tango-controls/pytango/pull/134>`_
+|          |     - `Pull Request #136: Add a Codacy badge to README.rst <https://github.com/tango-controls/pytango/pull/136>`_
+|          |     - `Pull Request #137: Codacy badge in README and code quality policy in How to Contribute <https://github.com/tango-controls/pytango/pull/137>`_
+|          |     - `Pull Request #143: Added missing PipeEventData & DevIntrChangeEventData <https://github.com/tango-controls/pytango/pull/143>`_
+|          |     - `Pull Request #148: Expose utils helpers (issue #144) <https://github.com/tango-controls/pytango/pull/148>`_
+|          | Changes:                                                                                                                                                              |
+|          |     -
+|          | Bug fixes:                                                                                                                                                            |
+|          |     - `Pull Request 85 (issue #84): Fix Gevent ThreadPool exceptions <https://github.com/tango-controls/pytango/pull/85>`_
+|          |     - `Pull Request 94 (issue #93): Fix issues in setup file <https://github.com/tango-controls/pytango/pull/94>`_
+|          |     - `Pull Request #96: Filter badges from the long description <https://github.com/tango-controls/pytango/pull/96>`_
+|          |     - `Pull Request #97: Fix/linker options <https://github.com/tango-controls/pytango/pull/97>`_
+|          |     - `Pull Request #98: Refactor green mode for client and server APIs<https://github.com/tango-controls/pytango/pull/98>`_
+|          |     - `Pull Request #101 (issue #100) check for None and return null string <https://github.com/tango-controls/pytango/pull/101>`_
+|          |     - `Pull Request #102: Update server tests <https://github.com/tango-controls/pytango/pull/102>`_
+|          |     - `Pull Request #103: Cache build objects to optimize travis builds <https://github.com/tango-controls/pytango/pull/103>`_
+|          |     - `Pull Request #112 (issue #111): Use _DeviceClass as tango device class constructor <https://github.com/tango-controls/pytango/pull/112>`_
+|          |     - `Pull Request #128: Set default worker in server.py (fix issue #127) <https://github.com/tango-controls/pytango/pull/128>`_
+|          |     - `Pull Request #135: Better exception handling in server.run and test context (issue #131) <https://github.com/tango-controls/pytango/pull/135>`_
+|          |     - `Pull Request #142 (issue 142): Added missing PipeEventData & DevIntrChangeEventData <https://github.com/tango-controls/pytango/pull/143>`_
+|          |     - `Pull Request #148: Expose utils helpers (issue #144) <https://github.com/tango-controls/pytango/pull/148>`_
+|          |     - `Pull Request #149: Fix return value of proxy.subscribe_event <https://github.com/tango-controls/pytango/pull/149>`_
+|          |     - `Issue #95: Git workflow <https://github.com/tango-controls/pytango/issues/95>`_
+|          |     - `Issue #99: subscribe_event fails between Tango mixing <https://github.com/tango-controls/pytango/issues/99>`_
+|          |     - `Issue #105: PyTango installation <https://github.com/tango-controls/pytango/issues/105>`_
+|          |     - `Issue #107: Installing PyTango on Ubuntu 17.04 <https://github.com/tango-controls/pytango/issues/107>`_
+|          |     - `Issue #110: PyTango workshop @ SOLARIS - list of tasks <https://github.com/tango-controls/pytango/issues/110>`_
+|          |     - `Issue #120: PyTango 8.1.9 tagged but not on PyPI <https://github.com/tango-controls/pytango/issues/120>`_
+|          |     - `Issue #130: Unstable jobs in Travis CI <https://github.com/tango-controls/pytango/issues/130>`_
+|          |     - `Issue #133: Include automatic code quality checks <https://github.com/tango-controls/pytango/issues/133>`_
+|          |     - `Issue #138: Attributes with DevInt data_type not supported <https://github.com/tango-controls/pytango/issues/138>`_
+|          |     - `Issue #146: Installation error <https://github.com/tango-controls/pytango/issues/146>`_
+|          |     - `Issue #150: problem with compile Boost.Python on windows 10 64bit <https://github.com/tango-controls/pytango/issues/150>`_
+|          |     - `Issue #152: pytango compilation problems <https://github.com/tango-controls/pytango/issues/152>`_
+|          |                                                                                                                                                                       |
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 9.2.1    | 9.2.1 release.                                                                                                                                                        |
 |          |                                                                                                                                                                       |
 |          | Features:                                                                                                                                                             |
